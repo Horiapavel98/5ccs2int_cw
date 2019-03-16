@@ -22,7 +22,7 @@
     (quality-index-resources-cost ?c - Country)
     (quality-index-industry-cost ?c - Country)
     (quality-index-services-cost ?c - Country))
-    
+
 ;predicates
 (:predicates
     (is-resources-biased ?c - Country)
@@ -91,7 +91,3 @@
             (at start(decrease(services-sector ?c) (quality-index-services-cost ?c)))
             (at end(increase(quality-of-life-index ?c) 1))
             (at end(not(is-growing-quality-of-life ?c)))))
-;and(at start(>= (funds ?c) (resource-price ?c))
-;               (at start(>= (funds ?c) (industry-price ?c))
-;               (at start(>= (funds ?c) (services-sector ?c))
-;               )))
