@@ -90,5 +90,43 @@ Country Template:
 
 Init State 1:
 Belgium, Germany, France, Italy, Luxembourg, Netherlands
-
-Country Template:
+{
+  "name": "Netherlands",
+  "functions": {
+    "vars": {
+      "resources": 2,
+      "industry": 16,
+      "services": 68,
+      "funds": 85,
+      "quality-of-life-index": 190
+    },
+    "constants": {
+      "price": {
+        "resources": 40,
+        "industry": 5,
+        "services": 1
+      },
+      "eco-growth": {
+        "resources": 1,
+        "industry": 1,
+        "services": "value"8
+      },
+      "quality-of-life-growth": {
+        "resources": 10,
+        "industry": 10,
+        "services": 10
+      }
+    }
+  },
+  "predicates": {
+    "biases": {
+      "resource": false,
+      "industry": false,
+      "services": true
+    },
+    "technical": {
+      "growing-eco": false,
+      "growing-quality-of-life": false
+    }
+  }
+}
