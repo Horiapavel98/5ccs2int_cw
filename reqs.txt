@@ -90,3 +90,5 @@ Country Template:
 
 Init State 1:
 Belgium, Germany, France, Italy, Luxembourg, Netherlands
+
+Country Template:

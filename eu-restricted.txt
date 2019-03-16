@@ -1,0 +1,46 @@
+{
+countries:[
+  {
+    "name": "Belgium",
+    "functions": {
+      "vars": {
+        "resources": 4,
+        "industry": 108,
+        "services": 400,
+        "funds": 512,
+        "quality-of-life-index": 162
+      },
+      "constants": {
+        "price": {
+          "resources": 20,
+          "industry": 4,
+          "services": 0.5
+        },
+        "eco-growth": {
+          "resources": 1,
+          "industry": 1,
+          "services": 8
+        },
+        "quality-of-life-growth": {
+          "resources": 5,
+          "industry": 5,
+          "services": 5
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": true
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
+  },
+  
+
+  ]
+}
