@@ -1,0 +1,47 @@
+Countries:
+    Austria, Belgium, Bulgaria, Croatia, Cyprus
+    Czechia, Denmark, Estonia, Finland, France,
+    Greece, Germany, Hungary, Ireland, Italy, Latvia,
+    Lithuania, Luxembourg, Malta, Netherlands,
+    Poland, Portugal, Romania, Slovakia, Slovenia,
+    Spain, Sweden, United Kingdom
+
+Fluents:
+  Variables:
+    1. Economic Sector: Resources
+    2. Economic Sector: Industry
+    3. Economic Sector: Services
+    4. Funds <--- Initial value set to country GDP
+    5. Quality Of Life Index
+  Constants:
+    -- Price --
+      1. Resources Price
+      2. Industry Price
+      3. Service Price
+    -- Economic Growth Constants --
+      4. Resources Grow
+      5. Industry Grow
+      6. Services Grow
+    -- Quality of Life Cost --
+      7. Resources Cost
+      8. Industry Cost
+      9. Services Cost
+
+Predicates:
+        Economic Biases:
+            1. Resource Bias
+            2. Industry Bias
+            3. Services Bias
+        Tehnical:
+        4. growing economy
+        5. growing quality of life
+
+Actions:
+1. Trade Resources c1, c2, not(c1 bias resource),
+2. Trade Industry
+3. Trade Services
+4. Grow Economy
+5. Grow Quality of Life
+s
+Init State 1:
+Austria:(_,_,_,_,_)
