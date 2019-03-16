@@ -42,6 +42,51 @@ Actions:
 3. Trade Services
 4. Grow Economy
 5. Grow Quality of Life
-s
+
+
+Country Template:
+{
+  "name": "Country",
+  "functions": {
+    "vars": {
+      "resources": "value",
+      "industry": "value",
+      "services": "value",
+      "funds": "value",
+      "quality-of-life-index": "value"
+    },
+    "constants": {
+      "price": {
+        "resources": "value",
+        "industry": "value",
+        "services": "value"
+      },
+      "eco-growth": {
+        "resources": "value",
+        "industry": "value",
+        "services": "value"
+      },
+      "quality-of-life-growth": {
+        "resources": "value",
+        "industry": "value",
+        "services": "value"
+      }
+    }
+  },
+  "predicates": {
+    "biases": {
+      "resource": false,
+      "industry": false,
+      "services": false
+    },
+    "technical": {
+      "growing-eco": false,
+      "growing-quality-of-life": false
+    }
+  }
+}
+
+
+
 Init State 1:
-Austria:(_,_,_,_,_)
+Belgium, Germany, France, Italy, Luxembourg, Netherlands
