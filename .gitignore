@@ -1,0 +1,6 @@
+IPCdomains/
+pddl-domains/
+parser/
+report*.pdf
+
+.vscode/
