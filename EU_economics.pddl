@@ -1,4 +1,4 @@
-;domain.pddl
+;domain file
 (define (domain EU_economics)
 (:requirements :equality :typing :fluents :durative-actions)
 (:types Country)
@@ -13,7 +13,7 @@
     (services-sector ?c - Country)
     (funds ?c - Country)
     (quality-of-life-index ?c - Country)
-    (resource-price ?c - Country)
+    (resources-price ?c - Country)
     (industry-price ?c - Country)
     (services-price ?c - Country)
     (resources-growth ?c - Country)
@@ -36,11 +36,11 @@
 (:action trade-resources
  :parameters(?c1 ?c2 - Country)
  :precondition(and (not(is-resources-biased ?c1)
-                   (>= (funds ?c1) (resource-price ?c2) )
+                   (>= (funds ?c1) (resources-price ?c2) )
                    (>= (resources-sector ?c2) 1)))
- :effect(and(decrease(funds ?c1) (resource-price ?c2))
+ :effect(and(decrease(funds ?c1) (resources-price ?c2))
            (decrease(resources-sector ?c2) 1)
-           (increase(funds ?c2) (resource-price ?c2))))
+           (increase(funds ?c2) (resources-price ?c2))))
 
 ; c1 buys from c2
 ; INDUSTRY
@@ -91,3 +91,5 @@
             (at start(decrease(services-sector ?c) (quality-index-services-cost ?c)))
             (at end(increase(quality-of-life-index ?c) 1))
             (at end(not(is-growing-quality-of-life ?c)))))
+
+)
