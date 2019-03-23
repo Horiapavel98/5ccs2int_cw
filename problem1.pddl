@@ -5,7 +5,7 @@
         (:domain EU_economics)
         (:objects Belgium Germany France Italy Luxembourg Netherlands - Country) ; "name": "Belgium"
 
-    
+
 (:init
                                                         ; -- Variables --
        (=(resources-sector Belgium) 4)                  ; "resources": 4
