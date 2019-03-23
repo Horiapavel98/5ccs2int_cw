@@ -29,8 +29,8 @@ model = """                                                    ; -- Variables --
        ser-bias
 
                                                             ; -- Technical --
-       (is-not-growing-economy country))                    ; "growing-eco": false
-       (is-not-growing-quality-of-life country))            ; "growing-quality-of-life": false
+       (is-not-growing-economy country)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life country)            ; "growing-quality-of-life": false
 """
 
 f = open("eu-restricted.txt", 'r')
