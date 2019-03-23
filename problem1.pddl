@@ -5,5 +5,5 @@
         (:domain EU_economics)
         (:objects Belgium Germany France Italy Luxembourg Netherlands - Country) ; "name": "Belgium"
 
-
+    
 )
