@@ -11,9 +11,9 @@
        (=(services-price Belgium) 0.5)                  ; "services": 0.5
 
                                                             ; -- Economy growth --
-       (=(resource8 Belgium) 1)               ; "resources": 1
+       (=(resources-growth Belgium) 1)               ; "resources": 1
        (=(industry-growth Belgium) 1)                ; "industry": 1
-       (=(service8 Belgium) 8)                ; "services": 8
+       (=(services-growth Belgium) 8)                ; "services": s8
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost Belgium) 50)     ; "resources": 50
@@ -41,9 +41,9 @@
        (=(services-price Germany) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
-       (=(resource7 Germany) 1)               ; "resources": 1
+       (=(resources-growth Germany) 1)               ; "resources": 1
        (=(industry-growth Germany) 2)                ; "industry": 2
-       (=(service7 Germany) 7)                ; "services": 7
+       (=(services-growth Germany) 7)                ; "services": s7
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost Germany) 300)     ; "resources": 300
@@ -71,9 +71,9 @@
        (=(services-price France) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
-       (=(resource8 France) 1)               ; "resources": 1
+       (=(resources-growth France) 1)               ; "resources": 1
        (=(industry-growth France) 1)                ; "industry": 1
-       (=(service8 France) 8)                ; "services": 8
+       (=(services-growth France) 8)                ; "services": s8
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost France) 200)     ; "resources": 200
@@ -101,9 +101,9 @@
        (=(services-price Italy) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
-       (=(resource8 Italy) 1)               ; "resources": 1
+       (=(resources-growth Italy) 1)               ; "resources": 1
        (=(industry-growth Italy) 1)                ; "industry": 1
-       (=(service8 Italy) 8)                ; "services": 8
+       (=(services-growth Italy) 8)                ; "services": s8
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost Italy) 100)     ; "resources": 100
@@ -131,9 +131,9 @@
        (=(services-price Luxembourg) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
-       (=(resource8 Luxembourg) 1)               ; "resources": 1
+       (=(resources-growth Luxembourg) 1)               ; "resources": 1
        (=(industry-growth Luxembourg) 1)                ; "industry": 1
-       (=(service8 Luxembourg) 8)                ; "services": 8
+       (=(services-growth Luxembourg) 8)                ; "services": s8
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost Luxembourg) 0.1)     ; "resources": 0.1
@@ -161,9 +161,9 @@
        (=(services-price Netherlands) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
-       (=(resource8 Netherlands) 1)               ; "resources": 1
+       (=(resources-growth Netherlands) 1)               ; "resources": 1
        (=(industry-growth Netherlands) 1)                ; "industry": 1
-       (=(service8 Netherlands) 8)                ; "services": 8
+       (=(services-growth Netherlands) 8)                ; "services": s8
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost Netherlands) 10)     ; "resources": 10

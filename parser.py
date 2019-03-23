@@ -14,9 +14,9 @@ model = """                                                    ; -- Variables --
        (=(services-price country) ser-price)                  ; "services": ser-price
 
                                                             ; -- Economy growth --
-       (=(resources-growth country) r-growth)               ; "resources": r-growth
-       (=(industry-growth country) i-growth)                ; "industry": i-growth
-       (=(services-growth country) s-growth)                ; "services": s-growth
+       (=(resources-growth country) res-growth)               ; "resources": res-growth
+       (=(industry-growth country) ind-growth)                ; "industry": ind-growth
+       (=(services-growth country) ser-growth)                ; "services": sser-growth
 
                                                             ; -- Quality of life growth --
        (=(quality-index-resources-cost country) qual-r)     ; "resources": qual-r
@@ -66,9 +66,9 @@ for i in content['countries']:
     cur = re.sub('ind-price', str(i['functions']['constants']['price']['industry']), cur)
     cur = re.sub('ser-price', str(i['functions']['constants']['price']['services']), cur)
 
-    cur = re.sub('r-growth', str(i['functions']['constants']['eco-growth']['resources']), cur)
-    cur = re.sub('i-growth', str(i['functions']['constants']['eco-growth']['industry']), cur)
-    cur = re.sub('s-growth', str(i['functions']['constants']['eco-growth']['services']), cur)
+    cur = re.sub('res-growth', str(i['functions']['constants']['eco-growth']['resources']), cur)
+    cur = re.sub('ind-growth', str(i['functions']['constants']['eco-growth']['industry']), cur)
+    cur = re.sub('ser-growth', str(i['functions']['constants']['eco-growth']['services']), cur)
 
     cur = re.sub('qual-r', str(i['functions']['constants']['quality-of-life-growth']['resources']), cur)
     cur = re.sub('qual-i', str(i['functions']['constants']['quality-of-life-growth']['industry']), cur)
