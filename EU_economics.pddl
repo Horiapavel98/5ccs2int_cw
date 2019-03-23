@@ -1,6 +1,6 @@
 ;domain file
 (define (domain EU_economics)
-(:requirements :equality :typing :fluents :durative-actions  :negative-preconditions)
+(:requirements  :equality :typing :fluents :durative-actions)
 (:types Country)
 
 ;fluents
@@ -22,19 +22,20 @@
 
 ;predicates
 (:predicates
-    (is-resources-biased ?c - Country)
-    (is-industry-biased ?c - Country)
-    (is-services-biased ?c - Country)
-    (is-growing-economy ?c - Country)
-    (is-growing-quality-of-life ?c - Country))
+    (is-not-resources-biased ?c - Country)
+    (is-not-industry-biased ?c - Country)
+    (is-not-services-biased ?c - Country)
+    (is-not-growing-economy ?c - Country)
+    (is-not-growing-quality-of-life ?c - Country))
 
 ; c1 buys from c2
 ; RESOURCES
 (:action trade-resources
  :parameters(?c1 ?c2 - Country)
- :precondition(and (not(is-resources-biased ?c1))
+ :precondition(and (is-not-resources-biased ?c1)
                    (>= (funds ?c1) (resources-price ?c2))
                    (>= (resources-sector ?c2) 1)
+                   (not(= ?c1 ?c2))
             )
  :effect(and(decrease(funds ?c1) (resources-price ?c2))
            (decrease(resources-sector ?c2) 1)
@@ -47,9 +48,10 @@
 ; INDUSTRY
 (:action trade-industry
  :parameters(?c1 ?c2 - Country)
- :precondition(and (not(is-industry-biased ?c1))
+ :precondition(and (is-not-industry-biased ?c1)
                    (>= (funds ?c1) (industry-price ?c2) )
                    (>= (industry-sector ?c2) 1)
+                   (not(= ?c1 ?c2))
                 )
  :effect(and(decrease(funds ?c1) (industry-price ?c2))
            (decrease(industry-sector ?c2) 1)
@@ -59,9 +61,10 @@
 ;SERVICES
 (:action trade-services
  :parameters(?c1 ?c2 - Country)
- :precondition(and (not(is-services-biased ?c1))
+ :precondition(and (is-not-services-biased ?c1)
                    (>= (funds ?c1) (services-price ?c2) )
                    (>= (services-sector ?c2) 1)
+                   (not(= ?c1 ?c2))
                 )
  :effect(and(decrease(funds ?c1) (services-price ?c2))
            (decrease(services-sector ?c2) 1)
@@ -72,13 +75,13 @@
  :parameters(?c - Country)
  :duration (= ?duration 1)
  :condition(and(at start(>= (funds ?c) 10))
-               (at start(not(is-growing-economy ?c))))
+               (at start(is-not-growing-economy ?c)))
  :effect(and(at start(decrease(funds ?c) 10))
-             (at start(is-growing-economy ?c))
+             (at start(not(is-not-growing-economy ?c)))
              (at end(increase(resources-sector ?c) (resources-growth ?c)))
              (at end(increase(industry-sector ?c) (industry-growth ?c)))
              (at end(increase(services-sector ?c) (services-growth ?c)))
-             (at end(not(is-growing-economy ?c)))))
+             (at end(is-not-growing-economy ?c))))
 
 ; grow quality of life
 (:durative-action grow-quality-of-life
@@ -87,12 +90,12 @@
  :condition(and(at start(<= (quality-index-resources-cost ?c) (resources-sector ?c)))
                (at start(<= (quality-index-industry-cost ?c) (industry-sector ?c)))
                (at start(<= (quality-index-services-cost ?c) (services-sector ?c)))
-               (at start(not(is-growing-quality-of-life ?c))))
- :effect(and(at start(is-growing-quality-of-life ?c))
+               (at start(is-not-growing-quality-of-life ?c)))
+ :effect(and(at start(not(is-not-growing-quality-of-life ?c)))
             (at start(decrease(resources-sector ?c) (quality-index-resources-cost ?c)))
             (at start(decrease(industry-sector ?c) (quality-index-industry-cost ?c)))
             (at start(decrease(services-sector ?c) (quality-index-services-cost ?c)))
             (at end(increase(quality-of-life-index ?c) 1))
-            (at end(not(is-growing-quality-of-life ?c)))))
+            (at end(is-not-growing-quality-of-life ?c))))
 
 )

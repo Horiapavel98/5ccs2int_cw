@@ -30,13 +30,13 @@
        (=(quality-index-services-cost Belgium) 50)      ; "services": 50
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased Belgium))             ; resources: false
-       (not(is-industry-biased Belgium))              ; industry: false
-       (is-services-biased Belgium)                   ; services: true
+       (is-not-resources-biased Belgium)             ; resources: false
+       (is-not-industry-biased Belgium)              ; industry: false
+       (not(is-not-services-biased Belgium))                   ; services: true
 
                                                             ; -- Technical --
-       (not(is-growing-economy Belgium))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life Belgium))            ; "growing-quality-of-life": false
+       (is-not-growing-economy Belgium)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Belgium)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
        (=(resources-sector Germany) 24)                  ; "resources": 24
        (=(industry-sector Germany) 1209)                   ; "industry": 1209
@@ -60,13 +60,13 @@
        (=(quality-index-services-cost Germany) 300)      ; "services": 300
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased Germany))             ; resources: false
-       (not(is-industry-biased Germany))              ; industry: false
-       (is-services-biased Germany)                   ; services: true
+       (is-not-resources-biased Germany)             ; resources: false
+       (is-not-industry-biased Germany)              ; industry: false
+       (not(is-not-services-biased Germany))                   ; services: true
 
                                                             ; -- Technical --
-       (not(is-growing-economy Germany))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life Germany))            ; "growing-quality-of-life": false
+       (is-not-growing-economy Germany)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Germany)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
        (=(resources-sector France) 45)                  ; "resources": 45
        (=(industry-sector France) 542)                   ; "industry": 542
@@ -90,13 +90,13 @@
        (=(quality-index-services-cost France) 200)      ; "services": 200
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased France))             ; resources: false
-       (not(is-industry-biased France))              ; industry: false
-       (is-services-biased France)                   ; services: true
+       (is-not-resources-biased France)             ; resources: false
+       (is-not-industry-biased France)              ; industry: false
+       (not(is-not-services-biased France))                   ; services: true
 
                                                             ; -- Technical --
-       (not(is-growing-economy France))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life France))            ; "growing-quality-of-life": false
+       (is-not-growing-economy France)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life France)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
        (=(resources-sector Italy) 42)                  ; "resources": 42
        (=(industry-sector Italy) 504)                   ; "industry": 504
@@ -120,13 +120,13 @@
        (=(quality-index-services-cost Italy) 100)      ; "services": 100
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased Italy))             ; resources: false
-       (not(is-industry-biased Italy))              ; industry: false
-       (is-services-biased Italy)                   ; services: true
+       (is-not-resources-biased Italy)             ; resources: false
+       (is-not-industry-biased Italy)              ; industry: false
+       (not(is-not-services-biased Italy))                   ; services: true
 
                                                             ; -- Technical --
-       (not(is-growing-economy Italy))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life Italy))            ; "growing-quality-of-life": false
+       (is-not-growing-economy Italy)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Italy)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
        (=(resources-sector Luxembourg) 1)                  ; "resources": 1
        (=(industry-sector Luxembourg) 1)                   ; "industry": 1
@@ -150,13 +150,13 @@
        (=(quality-index-services-cost Luxembourg) 0.1)      ; "services": 0.1
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased Luxembourg))             ; resources: false
-       (not(is-industry-biased Luxembourg))              ; industry: false
-       (not(is-services-biased Luxembourg))              ; services: false
+       (is-not-resources-biased Luxembourg)             ; resources: false
+       (is-not-industry-biased Luxembourg)              ; industry: false
+       (is-not-services-biased Luxembourg)              ; services: false
 
                                                             ; -- Technical --
-       (not(is-growing-economy Luxembourg))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life Luxembourg))            ; "growing-quality-of-life": false
+       (is-not-growing-economy Luxembourg)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Luxembourg)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
        (=(resources-sector Netherlands) 2)                  ; "resources": 2
        (=(industry-sector Netherlands) 16)                   ; "industry": 16
@@ -180,24 +180,24 @@
        (=(quality-index-services-cost Netherlands) 10)      ; "services": 10
 
        ;predicates initialised                              ; -- Biases --
-       (not(is-resources-biased Netherlands))             ; resources: false
-       (not(is-industry-biased Netherlands))              ; industry: false
-       (is-services-biased Netherlands)                   ; services: true
+       (is-not-resources-biased Netherlands)             ; resources: false
+       (is-not-industry-biased Netherlands)              ; industry: false
+       (not(is-not-services-biased Netherlands))                   ; services: true
 
                                                             ; -- Technical --
-       (not(is-growing-economy Netherlands))                    ; "growing-eco": false
-       (not(is-growing-quality-of-life Netherlands))            ; "growing-quality-of-life": false
+       (is-not-growing-economy Netherlands)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Netherlands)            ; "growing-quality-of-life": false
 
 )
 
 (:goal (and
     ;todo: put the goal condition here
-        (>= (quality-of-life-index Belgium) 170)
-        (>= (quality-of-life-index Germany) 170)
-        (>= (quality-of-life-index France) 170)
-        (>= (quality-of-life-index Italy) 170)
-        (>= (quality-of-life-index Luxembourg) 170)
-        (>= (quality-of-life-index Netherlands) 170)
+        (>= (quality-of-life-index Belgium) 160)
+        (>= (quality-of-life-index Germany) 160)
+        (>= (quality-of-life-index France) 160)
+        (>= (quality-of-life-index Italy) 160)
+        (>= (quality-of-life-index Luxembourg) 160)
+        (>= (quality-of-life-index Netherlands) 160)
     )
 )
 
