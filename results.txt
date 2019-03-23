@@ -6,9 +6,9 @@
        (=(quality-of-life-index Belgium) 162)          ; "quality-of-life-index": 162
 
                                                             ; -- Constants --
-       (=(resource0.5 Belgium) 20)                 ; "resources": 20
+       (=(resources-price Belgium) 20)                 ; "resources": 20
        (=(industry-price Belgium) 4)                  ; "industry": 4
-       (=(service0.5 Belgium) 0.5)                  ; "services": 0.5
+       (=(services-price Belgium) 0.5)                  ; "services": 0.5
 
                                                             ; -- Economy growth --
        (=(resource8 Belgium) 1)               ; "resources": 1
@@ -36,9 +36,9 @@
        (=(quality-of-life-index Germany) 187)          ; "quality-of-life-index": 187
 
                                                             ; -- Constants --
-       (=(resource1 Germany) 30)                 ; "resources": 30
+       (=(resources-price Germany) 30)                 ; "resources": 30
        (=(industry-price Germany) 3)                  ; "industry": 3
-       (=(service1 Germany) 1)                  ; "services": 1
+       (=(services-price Germany) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
        (=(resource7 Germany) 1)               ; "resources": 1
@@ -66,9 +66,9 @@
        (=(quality-of-life-index France) 157)          ; "quality-of-life-index": 157
 
                                                             ; -- Constants --
-       (=(resource1 France) 20)                 ; "resources": 20
+       (=(resources-price France) 20)                 ; "resources": 20
        (=(industry-price France) 6)                  ; "industry": 6
-       (=(service1 France) 1)                  ; "services": 1
+       (=(services-price France) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
        (=(resource8 France) 1)               ; "resources": 1
@@ -96,9 +96,9 @@
        (=(quality-of-life-index Italy) 145)          ; "quality-of-life-index": 145
 
                                                             ; -- Constants --
-       (=(resource1 Italy) 20)                 ; "resources": 20
+       (=(resources-price Italy) 20)                 ; "resources": 20
        (=(industry-price Italy) 6)                  ; "industry": 6
-       (=(service1 Italy) 1)                  ; "services": 1
+       (=(services-price Italy) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
        (=(resource8 Italy) 1)               ; "resources": 1
@@ -126,9 +126,9 @@
        (=(quality-of-life-index Luxembourg) 181)          ; "quality-of-life-index": 181
 
                                                             ; -- Constants --
-       (=(resource1 Luxembourg) 1)                 ; "resources": 1
+       (=(resources-price Luxembourg) 1)                 ; "resources": 1
        (=(industry-price Luxembourg) 1)                  ; "industry": 1
-       (=(service1 Luxembourg) 1)                  ; "services": 1
+       (=(services-price Luxembourg) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
        (=(resource8 Luxembourg) 1)               ; "resources": 1
@@ -156,9 +156,9 @@
        (=(quality-of-life-index Netherlands) 190)          ; "quality-of-life-index": 190
 
                                                             ; -- Constants --
-       (=(resource1 Netherlands) 40)                 ; "resources": 40
+       (=(resources-price Netherlands) 40)                 ; "resources": 40
        (=(industry-price Netherlands) 5)                  ; "industry": 5
-       (=(service1 Netherlands) 1)                  ; "services": 1
+       (=(services-price Netherlands) 1)                  ; "services": 1
 
                                                             ; -- Economy growth --
        (=(resource8 Netherlands) 1)               ; "resources": 1
