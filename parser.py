@@ -38,12 +38,12 @@ content = json.loads(f.read())
 f.close()
 results = []
 for i in content['countries']:
-    res_f = '(not(is-resources-biased country))             ; resources: false'
-    res_t = '(is-resources-biased country)                  ; resources: true'
-    ind_f = '(not(is-industry-biased country))              ; industry: false'
-    ind_t = '(is-industry-biased country)                   ; industry: true'
-    ser_f = '(not(is-services-biased country))              ; services: false'
-    ser_t = '(is-services-biased country)                   ; services: true'
+    res_f = '(is-not-resources-biased country)             ; resources: false'
+    res_t = '(not(is-not-resources-biased country))                  ; resources: true'
+    ind_f = '(is-not-industry-biased country)              ; industry: false'
+    ind_t = '(not(is-not-industry-biased country))                   ; industry: true'
+    ser_f = '(is-not-services-biased country)              ; services: false'
+    ser_t = '(not(is-not-services-biased country))                   ; services: true'
 
     res_f = re.sub('country', i['name'], res_f)
     res_t = re.sub('country', i['name'], res_t)
