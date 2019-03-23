@@ -1,5 +1,4 @@
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector Belgium) 4)                  ; "resources": 4
        (=(industry-sector Belgium) 108)                   ; "industry": 108
        (=(services-sector Belgium) 400)                   ; "services": 400
@@ -29,11 +28,7 @@
                                                             ; -- Technical --
        (not(is-growing-economy Belgium))                    ; "growing-eco": false
        (not(is-growing-quality-of-life Belgium))            ; "growing-quality-of-life": false
-    )
-)
-
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector Germany) 24)                  ; "resources": 24
        (=(industry-sector Germany) 1209)                   ; "industry": 1209
        (=(services-sector Germany) 2792)                   ; "services": 2792
@@ -63,11 +58,7 @@
                                                             ; -- Technical --
        (not(is-growing-economy Germany))                    ; "growing-eco": false
        (not(is-growing-quality-of-life Germany))            ; "growing-quality-of-life": false
-    )
-)
-
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector France) 45)                  ; "resources": 45
        (=(industry-sector France) 542)                   ; "industry": 542
        (=(services-sector France) 2207)                   ; "services": 2207
@@ -97,11 +88,7 @@
                                                             ; -- Technical --
        (not(is-growing-economy France))                    ; "growing-eco": false
        (not(is-growing-quality-of-life France))            ; "growing-quality-of-life": false
-    )
-)
-
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector Italy) 42)                  ; "resources": 42
        (=(industry-sector Italy) 504)                   ; "industry": 504
        (=(services-sector Italy) 1554)                   ; "services": 1554
@@ -131,11 +118,7 @@
                                                             ; -- Technical --
        (not(is-growing-economy Italy))                    ; "growing-eco": false
        (not(is-growing-quality-of-life Italy))            ; "growing-quality-of-life": false
-    )
-)
-
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector Luxembourg) 1)                  ; "resources": 1
        (=(industry-sector Luxembourg) 1)                   ; "industry": 1
        (=(services-sector Luxembourg) 5)                   ; "services": 5
@@ -165,11 +148,7 @@
                                                             ; -- Technical --
        (not(is-growing-economy Luxembourg))                    ; "growing-eco": false
        (not(is-growing-quality-of-life Luxembourg))            ; "growing-quality-of-life": false
-    )
-)
-
-
-(:init                                                      ; -- Variables --
+                                                    ; -- Variables --
        (=(resources-sector Netherlands) 2)                  ; "resources": 2
        (=(industry-sector Netherlands) 16)                   ; "industry": 16
        (=(services-sector Netherlands) 68)                   ; "services": 68
@@ -199,6 +178,3 @@
                                                             ; -- Technical --
        (not(is-growing-economy Netherlands))                    ; "growing-eco": false
        (not(is-growing-quality-of-life Netherlands))            ; "growing-quality-of-life": false
-    )
-)
-

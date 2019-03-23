@@ -1,8 +1,7 @@
 import json
 import re
 
-model = """
-(:init                                                      ; -- Variables --
+model = """                                                    ; -- Variables --
        (=(resources-sector country) r-var)                  ; "resources": r-var
        (=(industry-sector country) i-var)                   ; "industry": i-var
        (=(services-sector country) s-var)                   ; "services": s-var
@@ -32,9 +31,6 @@ model = """
                                                             ; -- Technical --
        (not(is-growing-economy country))                    ; "growing-eco": false
        (not(is-growing-quality-of-life country))            ; "growing-quality-of-life": false
-    )
-)
-
 """
 
 f = open("eu-restricted.txt", 'r')
