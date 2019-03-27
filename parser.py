@@ -12,6 +12,7 @@ model = """                                                    ; -- Variables --
        (=(resources-price country) res-price)                 ; "resources": res-price
        (=(industry-price country) ind-price)                  ; "industry": ind-price
        (=(services-price country) ser-price)                  ; "services": ser-price
+       (=(economy-growth-price) eco-growth-price)               ; "eceonmy growth: " : eco-growth-price
 
                                                             ; -- Economy growth --
        (=(resources-growth country) res-growth)               ; "resources": res-growth
@@ -65,6 +66,7 @@ for i in content['countries']:
     cur = re.sub('res-price', str(i['functions']['constants']['price']['resources']), cur)
     cur = re.sub('ind-price', str(i['functions']['constants']['price']['industry']), cur)
     cur = re.sub('ser-price', str(i['functions']['constants']['price']['services']), cur)
+    cur = re.sub('eco-growth-price', str(i['functions']['constants']['price']['economy']), cur)
 
     cur = re.sub('res-growth', str(i['functions']['constants']['eco-growth']['resources']), cur)
     cur = re.sub('ind-growth', str(i['functions']['constants']['eco-growth']['industry']), cur)

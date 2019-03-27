@@ -9,6 +9,7 @@
        (=(resources-price Belgium) 20)                 ; "resources": 20
        (=(industry-price Belgium) 4)                  ; "industry": 4
        (=(services-price Belgium) 0.5)                  ; "services": 0.5
+       (=(economy-growth-price) 30)               ; "eceonmy growth: " : 30
 
                                                             ; -- Economy growth --
        (=(resources-growth Belgium) 1)               ; "resources": 1
@@ -39,6 +40,7 @@
        (=(resources-price Germany) 30)                 ; "resources": 30
        (=(industry-price Germany) 3)                  ; "industry": 3
        (=(services-price Germany) 1)                  ; "services": 1
+       (=(economy-growth-price) 300)               ; "eceonmy growth: " : 300
 
                                                             ; -- Economy growth --
        (=(resources-growth Germany) 1)               ; "resources": 1
@@ -69,6 +71,7 @@
        (=(resources-price France) 20)                 ; "resources": 20
        (=(industry-price France) 6)                  ; "industry": 6
        (=(services-price France) 1)                  ; "services": 1
+       (=(economy-growth-price) 150)               ; "eceonmy growth: " : 150
 
                                                             ; -- Economy growth --
        (=(resources-growth France) 1)               ; "resources": 1
@@ -99,6 +102,7 @@
        (=(resources-price Italy) 20)                 ; "resources": 20
        (=(industry-price Italy) 6)                  ; "industry": 6
        (=(services-price Italy) 1)                  ; "services": 1
+       (=(economy-growth-price) 120)               ; "eceonmy growth: " : 120
 
                                                             ; -- Economy growth --
        (=(resources-growth Italy) 1)               ; "resources": 1
@@ -129,6 +133,7 @@
        (=(resources-price Luxembourg) 1)                 ; "resources": 1
        (=(industry-price Luxembourg) 1)                  ; "industry": 1
        (=(services-price Luxembourg) 1)                  ; "services": 1
+       (=(economy-growth-price) 5)               ; "eceonmy growth: " : 5
 
                                                             ; -- Economy growth --
        (=(resources-growth Luxembourg) 1)               ; "resources": 1
@@ -159,6 +164,7 @@
        (=(resources-price Netherlands) 40)                 ; "resources": 40
        (=(industry-price Netherlands) 5)                  ; "industry": 5
        (=(services-price Netherlands) 1)                  ; "services": 1
+       (=(economy-growth-price) 8)               ; "eceonmy growth: " : 8
 
                                                             ; -- Economy growth --
        (=(resources-growth Netherlands) 1)               ; "resources": 1

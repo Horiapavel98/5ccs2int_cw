@@ -14,7 +14,8 @@
         "price": {
           "resources": 20,
           "industry": 4,
-          "services": 0.5
+          "services": 0.5,
+          "economy": 30
         },
         "eco-growth": {
           "resources": 1,
@@ -54,7 +55,8 @@
         "price": {
           "resources": 30,
           "industry": 3,
-          "services": 1
+          "services": 1,
+          "economy": 300
         },
         "eco-growth": {
           "resources": 1,
@@ -94,7 +96,8 @@
         "price": {
           "resources": 20,
           "industry": 6,
-          "services": 1
+          "services": 1,
+          "economy": 150
         },
         "eco-growth": {
           "resources": 1,
@@ -134,7 +137,8 @@
         "price": {
           "resources": 20,
           "industry": 6,
-          "services": 1
+          "services": 1,
+          "economy": 120
         },
         "eco-growth": {
           "resources": 1,
@@ -174,7 +178,8 @@
         "price": {
           "resources": 1,
           "industry": 1,
-          "services": 1
+          "services": 1,
+          "economy": 5
         },
         "eco-growth": {
           "resources": 1,
@@ -214,7 +219,8 @@
         "price": {
           "resources": 40,
           "industry": 5,
-          "services": 1
+          "services": 1,
+          "economy": 8
         },
         "eco-growth": {
           "resources": 1,

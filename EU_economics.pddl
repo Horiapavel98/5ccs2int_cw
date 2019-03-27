@@ -1,6 +1,6 @@
 ;domain file
 (define (domain EU_economics)
-(:requirements  :equality :typing :fluents :durative-actions)
+(:requirements :equality :typing :fluents :durative-actions)
 (:types Country)
 
 ;fluents
