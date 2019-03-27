@@ -7,25 +7,25 @@
         "resources": 4,
         "industry": 108,
         "services": 400,
-        "funds": 512,
+        "funds": 536,
         "quality-of-life-index": 162
       },
       "constants": {
         "price": {
           "resources": 20,
           "industry": 4,
-          "services": 0.5,
+          "services": 2,
           "economy": 30
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 1,
-          "services": 8
+          "resources": 5,
+          "industry": 10,
+          "services": 15
         },
         "quality-of-life-growth": {
-          "resources": 50,
-          "industry": 50,
-          "services": 50
+          "resources": 2,
+          "industry": 8,
+          "services": 12
         }
       }
     },
@@ -45,36 +45,36 @@
     "name": "Germany",
     "functions": {
       "vars": {
-        "resources": 24,
-        "industry": 1209,
-        "services": 2792,
+        "resources": 1856,
+        "industry": 1622,
+        "services": 885,
         "funds": 4029,
         "quality-of-life-index": 187
       },
       "constants": {
         "price": {
-          "resources": 30,
-          "industry": 3,
-          "services": 1,
-          "economy": 300
+          "resources": 2,
+          "industry": 2,
+          "services": 15,
+          "economy": 377
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 2,
-          "services": 7
+          "resources": 150,
+          "industry": 150,
+          "services": 100
         },
         "quality-of-life-growth": {
-          "resources": 300,
-          "industry": 300,
-          "services": 300
+          "resources": 126,
+          "industry": 114,
+          "services": 155
         }
       }
     },
     "predicates": {
       "biases": {
-        "resource": false,
+        "resource": true,
         "industry": false,
-        "services": true
+        "services": false
       },
       "technical": {
         "growing-eco": false,
@@ -86,36 +86,36 @@
     "name": "France",
     "functions": {
       "vars": {
-        "resources": 45,
-        "industry": 542,
-        "services": 2207,
-        "funds": 2794,
-        "quality-of-life-index": 157
+        "resources": 1254,
+        "industry": 1126,
+        "services": 809,
+        "funds": 2795,
+        "quality-of-life-index": 158
       },
       "constants": {
         "price": {
-          "resources": 20,
-          "industry": 6,
-          "services": 1,
-          "economy": 150
+          "resources": 2,
+          "industry": 3,
+          "services": 12,
+          "economy": 154
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 1,
-          "services": 8
+          "resources": 100,
+          "industry": 100,
+          "services": 71
         },
         "quality-of-life-growth": {
-          "resources": 200,
-          "industry": 200,
-          "services": 200
+          "resources": 45,
+          "industry": 55,
+          "services": 62
         }
       }
     },
     "predicates": {
       "biases": {
-        "resource": false,
-        "industry": false,
-        "services": true
+        "resource": true,
+        "industry": true,
+        "services": false
       },
       "technical": {
         "growing-eco": false,
@@ -127,28 +127,28 @@
     "name": "Italy",
     "functions": {
       "vars": {
-        "resources": 42,
-        "industry": 504,
-        "services": 1554,
-        "funds": 2100,
-        "quality-of-life-index": 145
+        "resources": 703,
+        "industry": 1208,
+        "services": 602,
+        "funds": 2087,
+        "quality-of-life-index": 146
       },
       "constants": {
         "price": {
-          "resources": 20,
-          "industry": 6,
-          "services": 1,
-          "economy": 120
+          "resources": 7,
+          "industry": 2,
+          "services": 8,
+          "economy": 70
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 1,
-          "services": 8
+          "resources": 42,
+          "industry": 88,
+          "services": 23
         },
         "quality-of-life-growth": {
-          "resources": 100,
-          "industry": 100,
-          "services": 100
+          "resources": 40,
+          "industry": 50,
+          "services": 31
         }
       }
     },
@@ -168,28 +168,28 @@
     "name": "Luxembourg",
     "functions": {
       "vars": {
-        "resources": 1,
-        "industry": 1,
-        "services": 5,
-        "funds": 6,
+        "resources": 22,
+        "industry": 28,
+        "services": 46,
+        "funds": 69,
         "quality-of-life-index": 181
       },
       "constants": {
         "price": {
-          "resources": 1,
-          "industry": 1,
-          "services": 1,
+          "resources": 2,
+          "industry": 2,
+          "services": 2,
           "economy": 5
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 1,
-          "services": 8
+          "resources": 2,
+          "industry": 3,
+          "services": 2
         },
         "quality-of-life-growth": {
-          "resources": 0.1,
-          "industry": 0.1,
-          "services": 0.1
+          "resources": 4,
+          "industry": 4,
+          "services": 4
         }
       }
     },
@@ -209,28 +209,28 @@
     "name": "Netherlands",
     "functions": {
       "vars": {
-        "resources": 2,
-        "industry": 16,
-        "services": 68,
-        "funds": 85,
-        "quality-of-life-index": 190
+        "resources": 120,
+        "industry": 312,
+        "services": 540,
+        "funds": 910,
+        "quality-of-life-index": 189
       },
       "constants": {
         "price": {
-          "resources": 40,
+          "resources": 11,
           "industry": 5,
-          "services": 1,
-          "economy": 8
+          "services": 4,
+          "economy": 25
         },
         "eco-growth": {
-          "resources": 1,
-          "industry": 1,
-          "services": 8
+          "resources": 3,
+          "industry": 10,
+          "services": 15
         },
         "quality-of-life-growth": {
-          "resources": 10,
-          "industry": 10,
-          "services": 10
+          "resources": 15,
+          "industry": 57,
+          "services": 225
         }
       }
     },
