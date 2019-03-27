@@ -12,7 +12,7 @@ model = """                                                    ; -- Variables --
        (=(resources-price country) res-price)                 ; "resources": res-price
        (=(industry-price country) ind-price)                  ; "industry": ind-price
        (=(services-price country) ser-price)                  ; "services": ser-price
-       (=(economy-growth-price) eco-growth-price)               ; "eceonmy growth: " : eco-growth-price
+       (=(economy-growth-price country) eco-growth-price)                       ; "economy growth: " : eco-growth-price
 
                                                             ; -- Economy growth --
        (=(resources-growth country) res-growth)               ; "resources": res-growth
