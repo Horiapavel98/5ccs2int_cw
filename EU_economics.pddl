@@ -13,6 +13,7 @@
     (resources-price ?c - Country)
     (industry-price ?c - Country)
     (services-price ?c - Country)
+    (economy-growth-price ?c - Country)
     (resources-growth ?c - Country)
     (industry-growth ?c - Country)
     (services-growth ?c - Country)
@@ -30,53 +31,59 @@
 
 ; c1 buys from c2
 ; RESOURCES
-(:action trade-resources
+(:durative-action trade-resources
  :parameters(?c1 ?c2 - Country)
- :precondition(and (is-not-resources-biased ?c1)
-                   (>= (funds ?c1) (resources-price ?c2))
-                   (>= (resources-sector ?c2) 1)
-                   (not(= ?c1 ?c2))
-            )
- :effect(and(decrease(funds ?c1) (resources-price ?c2))
-           (decrease(resources-sector ?c2) 1)
-           (increase(funds ?c2) (resources-price ?c2))
+ :duration (= ?duration 1)
+ :condition(and(at start(is-not-resources-biased ?c1))
+               (at start(>= (funds ?c1) (* 50 (resources-price ?c2))))
+                (at start(>= (resources-sector ?c2) 50))
+                (over all (not (= ?c1 ?c2))))
+ :effect(and(at start(decrease(funds ?c1) (* 50 (resources-price ?c2))))
+           (at start(decrease(resources-sector ?c2) 50))
+           (at end(increase(funds ?c2) (* 50 (resources-price ?c2))))
+           (at end(increase (resources-sector ?c1) 50))
         )
-
-)
+ )
 
 ; c1 buys from c2
 ; INDUSTRY
-(:action trade-industry
+(:durative-action trade-industry
  :parameters(?c1 ?c2 - Country)
- :precondition(and (is-not-industry-biased ?c1)
-                   (>= (funds ?c1) (industry-price ?c2) )
-                   (>= (industry-sector ?c2) 1)
-                   (not(= ?c1 ?c2))
+ :duration (= ?duration 1)
+ :condition(and (at start(is-not-industry-biased ?c1))
+                   (at start(>= (funds ?c1) (* 50 (industry-price ?c2))))
+                   (at start(>= (industry-sector ?c2) 50))
+                   (over all (not (= ?c1 ?c2)))
                 )
- :effect(and(decrease(funds ?c1) (industry-price ?c2))
-           (decrease(industry-sector ?c2) 1)
-           (increase(funds ?c2) (industry-price ?c2))))
+ :effect(and(at start(decrease(funds ?c1) (* 50 (industry-price ?c2))))
+           (at start(decrease(industry-sector ?c2) 50))
+           (at end(increase(funds ?c2) (* 50 (industry-price ?c2))))
+           (at end(increase(industry-sector ?c1) 50))))
 
 ; c1 buys from c2
 ;SERVICES
-(:action trade-services
+(:durative-action trade-services
  :parameters(?c1 ?c2 - Country)
- :precondition(and (is-not-services-biased ?c1)
-                   (>= (funds ?c1) (services-price ?c2) )
-                   (>= (services-sector ?c2) 1)
-                   (not(= ?c1 ?c2))
+ :duration (= ?duration 1)
+ :condition(and (at start(is-not-services-biased ?c1))
+                   (at start(>= (funds ?c1) (* 50 (services-price ?c2) )))
+                   (at start(>= (services-sector ?c2) 50))
+                   (over all (not (= ?c1 ?c2)))
                 )
- :effect(and(decrease(funds ?c1) (services-price ?c2))
-           (decrease(services-sector ?c2) 1)
-           (increase(funds ?c2) (services-price ?c2))))
+ :effect(and(at start(decrease(funds ?c1) (* 50 (services-price ?c2))))
+           (at start(decrease(services-sector ?c2) 50))
+           (at end(increase(funds ?c2) (* 50 (services-price ?c2))))
+           (at end(increase(services-sector ?c1) 50))
+ )
+)
 
 ; grow economy
 (:durative-action grow-economy
  :parameters(?c - Country)
  :duration (= ?duration 1)
- :condition(and(at start(>= (funds ?c) 10))
+ :condition(and(at start(>= (funds ?c) (economy-growth-price ?c)))
                (at start(is-not-growing-economy ?c)))
- :effect(and(at start(decrease(funds ?c) 10))
+ :effect(and(at start(decrease(funds ?c) (economy-growth-price ?c)))
              (at start(not(is-not-growing-economy ?c)))
              (at end(increase(resources-sector ?c) (resources-growth ?c)))
              (at end(increase(industry-sector ?c) (industry-growth ?c)))
