@@ -286,6 +286,47 @@
         "growing-quality-of-life": false
       }
     }
+  },
+  {
+    "name": "Bulgaria",
+    "functions": {
+      "vars": {
+        "resources": 8,
+        "industry": 45,
+        "services": 110,
+        "funds": 162,
+        "quality-of-life-index": 130
+      },
+      "constants": {
+        "price": {
+          "resources": 5,
+          "industry": 5,
+          "services": 4,
+          "economy": 3
+        },
+        "eco-growth": {
+          "resources": 19,
+          "industry": 25,
+          "services": 32
+        },
+        "quality-of-life-growth": {
+          "resources": 18,
+          "industry": 24,
+          "services": 31
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": false
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
   }
   ]
 }

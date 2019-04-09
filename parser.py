@@ -34,7 +34,7 @@ model = """                                                    ; -- Variables --
        (is-not-growing-quality-of-life country)            ; "growing-quality-of-life": false
 """
 
-f = open("eu-restricted.txt", 'r')
+f = open("eu-template.json", 'r')
 content = json.loads(f.read())
 f.close()
 results = []

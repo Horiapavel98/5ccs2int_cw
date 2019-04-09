@@ -215,3 +215,34 @@
                                                             ; -- Technical --
        (is-not-growing-economy Austria)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Austria)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Bulgaria) 8)                  ; "resources": 8
+       (=(industry-sector Bulgaria) 45)                   ; "industry": 45
+       (=(services-sector Bulgaria) 110)                   ; "services": 110
+       (=(funds Bulgaria) 162)                             ; "funds": 162
+       (=(quality-of-life-index Bulgaria) 130)          ; "quality-of-life-index": 130
+
+                                                            ; -- Constants --
+       (=(resources-price Bulgaria) 5)                 ; "resources": 5
+       (=(industry-price Bulgaria) 5)                  ; "industry": 5
+       (=(services-price Bulgaria) 4)                  ; "services": 4
+       (=(economy-growth-price Bulgaria) 3)                       ; "economy growth: " : 3
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Bulgaria) 19)               ; "resources": 19
+       (=(industry-growth Bulgaria) 25)                ; "industry": 25
+       (=(services-growth Bulgaria) 32)                ; "services": s32
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Bulgaria) 18)     ; "resources": 18
+       (=(quality-index-industry-cost Bulgaria) 24)      ; "industry": 24
+       (=(quality-index-services-cost Bulgaria) 31)      ; "services": 31
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Bulgaria)             ; resources: false
+       (is-not-industry-biased Bulgaria)              ; industry: false
+       (is-not-services-biased Bulgaria)              ; services: false
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Bulgaria)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Bulgaria)            ; "growing-quality-of-life": false
