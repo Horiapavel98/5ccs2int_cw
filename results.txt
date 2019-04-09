@@ -184,3 +184,34 @@
                                                             ; -- Technical --
        (is-not-growing-economy Netherlands)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Netherlands)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Austria) 7)                  ; "resources": 7
+       (=(industry-sector Austria) 14)                   ; "industry": 14
+       (=(services-sector Austria) 443)                   ; "services": 443
+       (=(funds Austria) 464)                             ; "funds": 464
+       (=(quality-of-life-index Austria) 191)          ; "quality-of-life-index": 191
+
+                                                            ; -- Constants --
+       (=(resources-price Austria) 13)                 ; "resources": 13
+       (=(industry-price Austria) 5)                  ; "industry": 5
+       (=(services-price Austria) 1)                  ; "services": 1
+       (=(economy-growth-price Austria) 12)                       ; "economy growth: " : 12
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Austria) 2)               ; "resources": 2
+       (=(industry-growth Austria) 12)                ; "industry": 12
+       (=(services-growth Austria) 24)                ; "services": s24
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Austria) 5)     ; "resources": 5
+       (=(quality-index-industry-cost Austria) 35)      ; "industry": 35
+       (=(quality-index-services-cost Austria) 155)      ; "services": 155
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Austria)             ; resources: false
+       (is-not-industry-biased Austria)              ; industry: false
+       (not(is-not-services-biased Austria))                   ; services: true
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Austria)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Austria)            ; "growing-quality-of-life": false

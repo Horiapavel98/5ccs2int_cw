@@ -245,6 +245,47 @@
         "growing-quality-of-life": false
       }
     }
+  },
+  {
+    "name": "Austria",
+    "functions": {
+      "vars": {
+        "resources": 7,
+        "industry": 14,
+        "services": 443,
+        "funds": 464,
+        "quality-of-life-index": 191
+      },
+      "constants": {
+        "price": {
+          "resources": 13,
+          "industry": 5,
+          "services": 1,
+          "economy": 12
+        },
+        "eco-growth": {
+          "resources": 2,
+          "industry": 12,
+          "services": 24
+        },
+        "quality-of-life-growth": {
+          "resources": 5,
+          "industry": 35,
+          "services": 155
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": true
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
   }
   ]
 }
