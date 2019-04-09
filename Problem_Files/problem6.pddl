@@ -1,9 +1,11 @@
 ; problem file -- includes only a template for
 ; how countries are going to be represented in
 ; their initial state.
-(define (problem problem1)
+;
+; Problem file 6 - includes 6 EU countries
+(define (problem problem6)
         (:domain EU_economics)
-        (:objects Belgium Germany France Italy Luxembourg Netherlands - Country) ; "name": "Belgium"
+        (:objects Belgium Germany France Italy Luxembourg Netherlands - Country)
 
 
 (:init
