@@ -3,10 +3,10 @@
 ; how countries are going to be represented in
 ; their initial state.
 ;
-; Problem file 11 - includes 11 EU countries
-(define (problem problem11)
+; Problem file 12 - includes 12 EU countries
+(define (problem problem12)
         (:domain EU_economics)
-        (:objects Belgium Germany France Italy Luxembourg Netherlands Austria Bulgaria Croatia Cyprus Czech-Republic  - Country)
+        (:objects Belgium Germany France Italy Luxembourg Netherlands Austria Bulgaria Croatia Cyprus Czech-Republic Denmark  - Country)
 
 
 (:init
@@ -351,6 +351,37 @@
                                                             ; -- Technical --
        (is-not-growing-economy Czech-Republic)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Czech-Republic)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Denmark) 111)                  ; "resources": 111
+       (=(industry-sector Denmark) 125)                   ; "industry": 125
+       (=(services-sector Denmark) 680)                   ; "services": 680
+       (=(funds Denmark) 650)                             ; "funds": 650
+       (=(quality-of-life-index Denmark) 199)          ; "quality-of-life-index": 199
+
+                                                            ; -- Constants --
+       (=(resources-price Denmark) 4)                 ; "resources": 4
+       (=(industry-price Denmark) 3)                  ; "industry": 3
+       (=(services-price Denmark) 2)                  ; "services": 2
+       (=(economy-growth-price Denmark) 152)                       ; "economy growth: " : 152
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Denmark) 89)               ; "resources": 89
+       (=(industry-growth Denmark) 134)                ; "industry": 134
+       (=(services-growth Denmark) 260)                ; "services": s260
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Denmark) 45)     ; "resources": 45
+       (=(quality-index-industry-cost Denmark) 77)      ; "industry": 77
+       (=(quality-index-services-cost Denmark) 132)      ; "services": 132
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Denmark)             ; resources: false
+       (is-not-industry-biased Denmark)              ; industry: false
+       (is-not-services-biased Denmark)              ; services: false
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Denmark)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Denmark)            ; "growing-quality-of-life": false
 
 )
 
@@ -366,6 +397,7 @@
         (>= (quality-of-life-index Croatia) 190)
         (>= (quality-of-life-index Cyprus) 190)
         (>= (quality-of-life-index Czech-Republic) 190)
+        (>= (quality-of-life-index Denmark) 190)
        )
     )
 )

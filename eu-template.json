@@ -450,6 +450,47 @@
         "growing-quality-of-life": false
       }
     }
+  },
+  {
+    "name": "Denmark",
+    "functions": {
+      "vars": {
+        "resources": 111,
+        "industry": 125,
+        "services": 680,
+        "funds": 650,
+        "quality-of-life-index": 199
+      },
+      "constants": {
+        "price": {
+          "resources": 4,
+          "industry": 3,
+          "services": 2,
+          "economy": 152
+        },
+        "eco-growth": {
+          "resources": 89,
+          "industry": 134,
+          "services": 260
+        },
+        "quality-of-life-growth": {
+          "resources": 45,
+          "industry": 77,
+          "services": 132
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": false
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
   }
   ]
 }
