@@ -34,9 +34,40 @@ model = """                                                    ; -- Variables --
        (is-not-growing-quality-of-life country)            ; "growing-quality-of-life": false
 """
 
+intro = """
+; problem file -- includes only a template for
+; how countries are going to be represented in
+; their initial state.
+;
+; Problem file number - includes number EU countries
+(define (problem problemnumber)
+        (:domain EU_economics)
+        (:objects ctr_name - Country)
+
+
+(:init
+"""
+
+outro = """
+)
+
+(:goal (and
+goal_here
+       )
+    )
+)
+"""
+
+goal_model = "        (>= (quality-of-life-index ctr_name) 190)"
+
+
 f = open("eu-template.json", 'r')
 content = json.loads(f.read())
 f.close()
+
+
+intro = re.sub('number', str(len(content['countries'])), intro)
+
 results = []
 for i in content['countries']:
     res_f = '(is-not-resources-biased country)             ; resources: false'
@@ -53,6 +84,10 @@ for i in content['countries']:
     ser_f = re.sub('country', i['name'], ser_f)
     ser_t = re.sub('country', i['name'], ser_t)
 
+    intro = re.sub('ctr_name', i['name'] + " ctr_name", intro)
+    cur_goal = goal_model
+    cur_goal = re.sub('ctr_name', i['name'], cur_goal)
+    outro = re.sub('goal_here', cur_goal + "\ngoal_here", outro)
     # print(res_f)
 
     cur = model
@@ -99,7 +134,11 @@ for i in content['countries']:
 
     results.append(cur)
 
+intro = re.sub('ctr_name', "", intro)
+outro = re.sub('\ngoal_here', "", outro)
 f = open('results.txt', 'w+')
+f.write(intro)
 for i in results:
     f.write(i)
+f.write(outro)
 f.close()

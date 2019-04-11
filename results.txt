@@ -1,3 +1,15 @@
+
+; problem file -- includes only a template for
+; how countries are going to be represented in
+; their initial state.
+;
+; Problem file 10 - includes 10 EU countries
+(define (problem problem10)
+        (:domain EU_economics)
+        (:objects Belgium Germany France Italy Luxembourg Netherlands Austria Bulgaria Croatia Cyprus  - Country)
+
+
+(:init
                                                     ; -- Variables --
        (=(resources-sector Belgium) 4)                  ; "resources": 4
        (=(industry-sector Belgium) 108)                   ; "industry": 108
@@ -308,3 +320,20 @@
                                                             ; -- Technical --
        (is-not-growing-economy Cyprus)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Cyprus)            ; "growing-quality-of-life": false
+
+)
+
+(:goal (and
+        (>= (quality-of-life-index Belgium) 190)
+        (>= (quality-of-life-index Germany) 190)
+        (>= (quality-of-life-index France) 190)
+        (>= (quality-of-life-index Italy) 190)
+        (>= (quality-of-life-index Luxembourg) 190)
+        (>= (quality-of-life-index Netherlands) 190)
+        (>= (quality-of-life-index Austria) 190)
+        (>= (quality-of-life-index Bulgaria) 190)
+        (>= (quality-of-life-index Croatia) 190)
+        (>= (quality-of-life-index Cyprus) 190)
+       )
+    )
+)

@@ -43,7 +43,6 @@
 )
 
 (:goal (and
-    ;todo: put the goal condition here
         (>= (quality-of-life-index Belgium) 190)
     )
 )
