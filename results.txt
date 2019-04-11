@@ -277,3 +277,34 @@
                                                             ; -- Technical --
        (is-not-growing-economy Croatia)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Croatia)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Cyprus) 2)                  ; "resources": 2
+       (=(industry-sector Cyprus) 4)                   ; "industry": 4
+       (=(services-sector Cyprus) 29)                   ; "services": 29
+       (=(funds Cyprus) 35)                             ; "funds": 35
+       (=(quality-of-life-index Cyprus) 152)          ; "quality-of-life-index": 152
+
+                                                            ; -- Constants --
+       (=(resources-price Cyprus) 3)                 ; "resources": 3
+       (=(industry-price Cyprus) 3)                  ; "industry": 3
+       (=(services-price Cyprus) 3)                  ; "services": 3
+       (=(economy-growth-price Cyprus) 1)                       ; "economy growth: " : 1
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Cyprus) 3)               ; "resources": 3
+       (=(industry-growth Cyprus) 4)                ; "industry": 4
+       (=(services-growth Cyprus) 5)                ; "services": s5
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Cyprus) 1)     ; "resources": 1
+       (=(quality-index-industry-cost Cyprus) 1)      ; "industry": 1
+       (=(quality-index-services-cost Cyprus) 1)      ; "services": 1
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Cyprus)             ; resources: false
+       (is-not-industry-biased Cyprus)              ; industry: false
+       (is-not-services-biased Cyprus)              ; services: false
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Cyprus)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Cyprus)            ; "growing-quality-of-life": false

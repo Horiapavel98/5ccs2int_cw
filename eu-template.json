@@ -368,6 +368,47 @@
         "growing-quality-of-life": false
       }
     }
+  },
+  {
+    "name": "Cyprus",
+    "functions": {
+      "vars": {
+        "resources": 2,
+        "industry": 4,
+        "services": 29,
+        "funds": 35,
+        "quality-of-life-index": 152
+      },
+      "constants": {
+        "price": {
+          "resources": 3,
+          "industry": 3,
+          "services": 3,
+          "economy": 1
+        },
+        "eco-growth": {
+          "resources": 3,
+          "industry": 4,
+          "services": 5
+        },
+        "quality-of-life-growth": {
+          "resources": 1,
+          "industry": 1,
+          "services": 1
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": false
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
   }
   ]
 }
