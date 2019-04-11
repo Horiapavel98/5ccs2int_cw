@@ -261,7 +261,7 @@
 (=(resources-sector Croatia) 187)                  ; "resources": 187
 (=(industry-sector Croatia) 249)                   ; "industry": 249
 (=(services-sector Croatia) 357)                   ; "services": 357
-(=(funds Croatia) 525)                             ; "funds": 525
+(=(funds Croatia) 290)                             ; "funds": 290
 (=(quality-of-life-index Croatia) 165)          ; "quality-of-life-index": 165
 
         ; -- Constants --

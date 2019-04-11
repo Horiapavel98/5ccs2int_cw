@@ -335,7 +335,7 @@
         "resources": 187,
         "industry": 249,
         "services": 357,
-        "funds": 525,
+        "funds": 290,
         "quality-of-life-index": 165
       },
       "constants": {
@@ -402,6 +402,47 @@
       "biases": {
         "resource": false,
         "industry": false,
+        "services": false
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
+  },
+  {
+    "name": "Czech-Republic",
+    "functions": {
+      "vars": {
+        "resources": 150,
+        "industry": 321,
+        "services": 679,
+        "funds": 475,
+        "quality-of-life-index": 159
+      },
+      "constants": {
+        "price": {
+          "resources": 9,
+          "industry": 4,
+          "services": 6,
+          "economy": 12
+        },
+        "eco-growth": {
+          "resources": 9,
+          "industry": 26,
+          "services": 11
+        },
+        "quality-of-life-growth": {
+          "resources": 9,
+          "industry": 19,
+          "services": 20
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": true,
         "services": false
       },
       "technical": {

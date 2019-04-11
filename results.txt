@@ -3,10 +3,10 @@
 ; how countries are going to be represented in
 ; their initial state.
 ;
-; Problem file 10 - includes 10 EU countries
-(define (problem problem10)
+; Problem file 11 - includes 11 EU countries
+(define (problem problem11)
         (:domain EU_economics)
-        (:objects Belgium Germany France Italy Luxembourg Netherlands Austria Bulgaria Croatia Cyprus  - Country)
+        (:objects Belgium Germany France Italy Luxembourg Netherlands Austria Bulgaria Croatia Cyprus Czech-Republic  - Country)
 
 
 (:init
@@ -262,7 +262,7 @@
        (=(resources-sector Croatia) 187)                  ; "resources": 187
        (=(industry-sector Croatia) 249)                   ; "industry": 249
        (=(services-sector Croatia) 357)                   ; "services": 357
-       (=(funds Croatia) 525)                             ; "funds": 525
+       (=(funds Croatia) 290)                             ; "funds": 290
        (=(quality-of-life-index Croatia) 165)          ; "quality-of-life-index": 165
 
                                                             ; -- Constants --
@@ -320,6 +320,37 @@
                                                             ; -- Technical --
        (is-not-growing-economy Cyprus)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Cyprus)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Czech-Republic) 150)                  ; "resources": 150
+       (=(industry-sector Czech-Republic) 321)                   ; "industry": 321
+       (=(services-sector Czech-Republic) 679)                   ; "services": 679
+       (=(funds Czech-Republic) 475)                             ; "funds": 475
+       (=(quality-of-life-index Czech-Republic) 159)          ; "quality-of-life-index": 159
+
+                                                            ; -- Constants --
+       (=(resources-price Czech-Republic) 9)                 ; "resources": 9
+       (=(industry-price Czech-Republic) 4)                  ; "industry": 4
+       (=(services-price Czech-Republic) 6)                  ; "services": 6
+       (=(economy-growth-price Czech-Republic) 12)                       ; "economy growth: " : 12
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Czech-Republic) 9)               ; "resources": 9
+       (=(industry-growth Czech-Republic) 26)                ; "industry": 26
+       (=(services-growth Czech-Republic) 11)                ; "services": s11
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Czech-Republic) 9)     ; "resources": 9
+       (=(quality-index-industry-cost Czech-Republic) 19)      ; "industry": 19
+       (=(quality-index-services-cost Czech-Republic) 20)      ; "services": 20
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Czech-Republic)             ; resources: false
+       (not(is-not-industry-biased Czech-Republic))                   ; industry: true
+       (is-not-services-biased Czech-Republic)              ; services: false
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Czech-Republic)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Czech-Republic)            ; "growing-quality-of-life": false
 
 )
 
@@ -334,6 +365,7 @@
         (>= (quality-of-life-index Bulgaria) 190)
         (>= (quality-of-life-index Croatia) 190)
         (>= (quality-of-life-index Cyprus) 190)
+        (>= (quality-of-life-index Czech-Republic) 190)
        )
     )
 )
