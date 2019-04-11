@@ -246,3 +246,34 @@
                                                             ; -- Technical --
        (is-not-growing-economy Bulgaria)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Bulgaria)            ; "growing-quality-of-life": false
+                                                    ; -- Variables --
+       (=(resources-sector Croatia) 24)                  ; "resources": 24
+       (=(industry-sector Croatia) 46)                   ; "industry": 46
+       (=(services-sector Croatia) 102)                   ; "services": 102
+       (=(funds Croatia) 159)                             ; "funds": 159
+       (=(quality-of-life-index Croatia) 165)          ; "quality-of-life-index": 165
+
+                                                            ; -- Constants --
+       (=(resources-price Croatia) 8)                 ; "resources": 8
+       (=(industry-price Croatia) 5)                  ; "industry": 5
+       (=(services-price Croatia) 4)                  ; "services": 4
+       (=(economy-growth-price Croatia) 3)                       ; "economy growth: " : 3
+
+                                                            ; -- Economy growth --
+       (=(resources-growth Croatia) 6)               ; "resources": 6
+       (=(industry-growth Croatia) 6)                ; "industry": 6
+       (=(services-growth Croatia) 8)                ; "services": s8
+
+                                                            ; -- Quality of life growth --
+       (=(quality-index-resources-cost Croatia) 9)     ; "resources": 9
+       (=(quality-index-industry-cost Croatia) 10)      ; "industry": 10
+       (=(quality-index-services-cost Croatia) 14)      ; "services": 14
+
+       ;predicates initialised                              ; -- Biases --
+       (is-not-resources-biased Croatia)             ; resources: false
+       (is-not-industry-biased Croatia)              ; industry: false
+       (is-not-services-biased Croatia)              ; services: false
+
+                                                            ; -- Technical --
+       (is-not-growing-economy Croatia)                    ; "growing-eco": false
+       (is-not-growing-quality-of-life Croatia)            ; "growing-quality-of-life": false

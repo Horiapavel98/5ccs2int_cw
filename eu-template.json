@@ -327,6 +327,47 @@
         "growing-quality-of-life": false
       }
     }
+  },
+  {
+    "name": "Croatia",
+    "functions": {
+      "vars": {
+        "resources": 24,
+        "industry": 46,
+        "services": 102,
+        "funds": 159,
+        "quality-of-life-index": 165
+      },
+      "constants": {
+        "price": {
+          "resources": 8,
+          "industry": 5,
+          "services": 4,
+          "economy": 3
+        },
+        "eco-growth": {
+          "resources": 6,
+          "industry": 6,
+          "services": 8
+        },
+        "quality-of-life-growth": {
+          "resources": 9,
+          "industry": 10,
+          "services": 14
+        }
+      }
+    },
+    "predicates": {
+      "biases": {
+        "resource": false,
+        "industry": false,
+        "services": false
+      },
+      "technical": {
+        "growing-eco": false,
+        "growing-quality-of-life": false
+      }
+    }
   }
   ]
 }
