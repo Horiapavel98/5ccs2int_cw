@@ -332,10 +332,10 @@
     "name": "Croatia",
     "functions": {
       "vars": {
-        "resources": 24,
-        "industry": 46,
-        "services": 102,
-        "funds": 159,
+        "resources": 187,
+        "industry": 249,
+        "services": 357,
+        "funds": 525,
         "quality-of-life-index": 165
       },
       "constants": {
@@ -373,17 +373,17 @@
     "name": "Cyprus",
     "functions": {
       "vars": {
-        "resources": 2,
-        "industry": 4,
-        "services": 29,
-        "funds": 35,
+        "resources": 12,
+        "industry": 24,
+        "services": 45,
+        "funds": 65,
         "quality-of-life-index": 152
       },
       "constants": {
         "price": {
-          "resources": 3,
-          "industry": 3,
-          "services": 3,
+          "resources": 7,
+          "industry": 6,
+          "services": 6,
           "economy": 1
         },
         "eco-growth": {

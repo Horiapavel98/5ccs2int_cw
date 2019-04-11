@@ -258,10 +258,10 @@
 (is-not-growing-economy Bulgaria)                    ; "growing-eco": false
 (is-not-growing-quality-of-life Bulgaria)            ; "growing-quality-of-life": false
 ; -- Variables --
-(=(resources-sector Croatia) 24)                  ; "resources": 24
-(=(industry-sector Croatia) 46)                   ; "industry": 46
-(=(services-sector Croatia) 102)                   ; "services": 102
-(=(funds Croatia) 159)                             ; "funds": 159
+(=(resources-sector Croatia) 187)                  ; "resources": 187
+(=(industry-sector Croatia) 249)                   ; "industry": 249
+(=(services-sector Croatia) 357)                   ; "services": 357
+(=(funds Croatia) 525)                             ; "funds": 525
 (=(quality-of-life-index Croatia) 165)          ; "quality-of-life-index": 165
 
         ; -- Constants --

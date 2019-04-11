@@ -247,10 +247,10 @@
        (is-not-growing-economy Bulgaria)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Bulgaria)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
-       (=(resources-sector Croatia) 24)                  ; "resources": 24
-       (=(industry-sector Croatia) 46)                   ; "industry": 46
-       (=(services-sector Croatia) 102)                   ; "services": 102
-       (=(funds Croatia) 159)                             ; "funds": 159
+       (=(resources-sector Croatia) 187)                  ; "resources": 187
+       (=(industry-sector Croatia) 249)                   ; "industry": 249
+       (=(services-sector Croatia) 357)                   ; "services": 357
+       (=(funds Croatia) 525)                             ; "funds": 525
        (=(quality-of-life-index Croatia) 165)          ; "quality-of-life-index": 165
 
                                                             ; -- Constants --
@@ -278,16 +278,16 @@
        (is-not-growing-economy Croatia)                    ; "growing-eco": false
        (is-not-growing-quality-of-life Croatia)            ; "growing-quality-of-life": false
                                                     ; -- Variables --
-       (=(resources-sector Cyprus) 2)                  ; "resources": 2
-       (=(industry-sector Cyprus) 4)                   ; "industry": 4
-       (=(services-sector Cyprus) 29)                   ; "services": 29
-       (=(funds Cyprus) 35)                             ; "funds": 35
+       (=(resources-sector Cyprus) 12)                  ; "resources": 12
+       (=(industry-sector Cyprus) 24)                   ; "industry": 24
+       (=(services-sector Cyprus) 45)                   ; "services": 45
+       (=(funds Cyprus) 65)                             ; "funds": 65
        (=(quality-of-life-index Cyprus) 152)          ; "quality-of-life-index": 152
 
                                                             ; -- Constants --
-       (=(resources-price Cyprus) 3)                 ; "resources": 3
-       (=(industry-price Cyprus) 3)                  ; "industry": 3
-       (=(services-price Cyprus) 3)                  ; "services": 3
+       (=(resources-price Cyprus) 7)                 ; "resources": 7
+       (=(industry-price Cyprus) 6)                  ; "industry": 6
+       (=(services-price Cyprus) 6)                  ; "services": 6
        (=(economy-growth-price Cyprus) 1)                       ; "economy growth: " : 1
 
                                                             ; -- Economy growth --
